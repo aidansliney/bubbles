@@ -16,10 +16,7 @@ public class MainActivity extends AppCompatActivity {
     //The rectangle hit area around the bubbles
     Rect viewHitRect = new Rect();
     //stores if we are currently inside on of the bubbles
-    boolean insideLeft;
-    boolean insideRight;
-    boolean insideTop;
-    boolean insideBottom;
+    boolean insideLeft, insideRight,insideTop,insideBottom;
     public MediaPlayer mp;
 
     @Override
