@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_alignParentBottom="true"
+    tools:context="com.bubble.aidansliney.bubble.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/bubbleTop"
+        android:text="Bubble top"
+        android:textSize="8dp"
+        android:textColor="#ffffff"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/bubble"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/bubbleBottom"
+        android:layout_alignStart="@+id/bubbleBottom"/>
+
+    <Button
+        android:id="@+id/bubbleLeft"
+        android:text="Bubble Left"
+        android:textColor="#ffffff"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bubble"
+        android:layout_alignTop="@+id/bubbleBottom"
+        android:layout_toLeftOf="@+id/hop"
+        android:layout_toStartOf="@+id/hop" />
+
+    <Button
+        android:id="@+id/bubbleRight"
+        android:text="Bubble Right"
+        android:textColor="#ffffff"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bubble"
+        android:layout_alignTop="@+id/bubbleBottom"
+        android:layout_toRightOf="@+id/hop"
+        android:layout_toEndOf="@+id/hop" />
+    <Button
+        android:id="@+id/hop"
+        android:text="Hop"
+        android:textColor="#ffffff"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/hop_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:id="@+id/bubbleBottom"
+        android:text="Bubble Bottom"
+        android:textColor="#ffffff"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:background="@drawable/bubble"
+        android:layout_above="@+id/hop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>
